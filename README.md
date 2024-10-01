@@ -72,7 +72,7 @@ Before running the project, ensure you have the following dependencies installed
 You can install all dependencies using the following command:
 
 For example, for **Bitcoin**, the results are:
-``bash
+
 Mean Squared Error: [Calculated Value]
 Mean Absolute Error: [Calculated Value]
 Root Mean Squared Error: [Calculated Value]
@@ -84,15 +84,11 @@ Running the Project
 
 Ensure the following libraries are installed:
 
-bash
-
 `pip install pandas numpy matplotlib seaborn plotly fbprophet scikit-learn`
 
 ### Instructions to Run
 
 1.  **Clone the repository**:
-
-    bash
 
     `git clone https://github.com/your-username/crypto-price-forecasting.git
     cd crypto-price-forecasting`
@@ -109,8 +105,6 @@ bash
     Update the file paths in the script to point to your CSV data.
 
 3.  **Run the Script**: Execute the Python script to train the model and generate predictions.
-
-    bash
 
     `python crypto_forecast.py`
 
