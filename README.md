@@ -71,5 +71,73 @@ Before running the project, ensure you have the following dependencies installed
 
 You can install all dependencies using the following command:
 
-```bash
-pip install pandas numpy fbprophet matplotlib seaborn plotly scikit-learn
+For example, for **Bitcoin**, the results are:
+``bash
+Mean Squared Error: [Calculated Value]
+Mean Absolute Error: [Calculated Value]
+Root Mean Squared Error: [Calculated Value]
+
+Running the Project
+-------------------
+
+### Prerequisites
+
+Ensure the following libraries are installed:
+
+bash
+
+`pip install pandas numpy matplotlib seaborn plotly fbprophet scikit-learn`
+
+### Instructions to Run
+
+1.  **Clone the repository**:
+
+    bash
+
+    `git clone https://github.com/your-username/crypto-price-forecasting.git
+    cd crypto-price-forecasting`
+
+2.  **Prepare the Data**: Ensure that you have the CSV files for the cryptocurrencies:
+
+    -   Bitcoin (`Bitcoin1.csv`)
+    -   Ethereum (`Ethereum1.csv`)
+    -   Bitcoin Cash (`Bitcoincash1.csv`)
+    -   XRP Ripple (`Xrpripple1.csv`)
+    -   Litecoin (`Litecoin1.csv`)
+    -   Tether (`Tether1.csv`)
+
+    Update the file paths in the script to point to your CSV data.
+
+3.  **Run the Script**: Execute the Python script to train the model and generate predictions.
+
+    bash
+
+    `python crypto_forecast.py`
+
+4.  **View Results**: After running the script, the program will output the **MSE** and **MAE** for each cryptocurrency, along with graphical visualizations.
+
+Results and Visualizations
+--------------------------
+
+### Bitcoin Forecast Visualization:
+
+-   The following plot showcases the original and predicted closing prices for **Bitcoin** over the next 90 days.
+
+-   Similar visualizations and metrics are available for other cryptocurrencies like Ethereum, Litecoin, and XRP Ripple.
+
+### Rolling Mean and Standard Deviation Example:
+
+-   This chart helps in identifying trends and seasonality by visualizing the **Rolling Mean** and **Rolling Standard Deviation**.
+
+Conclusion
+----------
+
+This project demonstrates a systematic approach to time series forecasting using **Facebook Prophet** for predicting cryptocurrency prices. While the model provides a solid forecast, future improvements could involve adding more features (e.g., market volume, external financial indicators) and experimenting with more complex models to further improve accuracy.
+
+Overall, the project provides a solid foundation for time series analysis in the financial domain.
+
+Future Improvements
+-------------------
+
+-   Use more advanced models like **ARIMA**, **LSTM**, or **XGBoost** for comparison with **Facebook Prophet**.
+-   Incorporate external factors such as market volume, macroeconomic indicators, or news sentiment analysis to improve model accuracy.
